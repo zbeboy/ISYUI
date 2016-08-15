@@ -39,7 +39,7 @@ gulp.task('js-watch',['js'],browserSync.reload);
 // 处理完CSS文件后返回流
 gulp.task('css', function () {
 	var combined = combiner.obj([
-    gulp.src('css/**/*.?(css|map)'),
+    gulp.src('css/**/*'),
     gulp.dest('dist/css')
   ]);
 
@@ -114,6 +114,26 @@ gulp.task('font', function () {
 // 浏览器重载
 gulp.task('font-watch',['font'],browserSync.reload);
 
+/* 监听font-awesome文件 */
+
+// 处理完font-awesome文件后返回流
+gulp.task('font-awesome', function () {
+	var combined = combiner.obj([
+    gulp.src('font-awesome/**/*'),
+    gulp.dest('dist/font-awesome')
+  ]);
+
+  // 任何在上面的 stream 中发生的错误，都不会抛出，
+  // 而是会被监听器捕获
+  combined.on('error', console.error.bind(console));
+
+  return combined;
+});
+
+// 创建一个任务确保font-awesome任务完成之前能够继续响应
+// 浏览器重载
+gulp.task('font-awesome-watch',['font-awesome'],browserSync.reload);
+
 /* 监听icon文件 */
 
 // 处理完icon文件后返回流
@@ -175,10 +195,10 @@ gulp.task('html', function () {
 gulp.task('html-watch',['html'],browserSync.reload);
 
 // 使用默认任务启动Browersync,监听JS文件
-gulp.task('serve', ['js','css','images','fonts','font','icon','html','ui'], function () {
+gulp.task('serve', ['js','css','images','fonts','font','font-awesome','icon','html','ui'], function () {
 
     // 从这个项目的根目录启动服务器
-    yargs.p = yargs.p || 9090;
+    yargs.p = yargs.p || 8080;
     browserSync.init({
         server: {
             baseDir: "./dist"
@@ -189,10 +209,11 @@ gulp.task('serve', ['js','css','images','fonts','font','icon','html','ui'], func
     // 添加 browserSync.reload 到任务队列里
     // 所有的浏览器重载后任务完成。
     gulp.watch("js/**/*.js", ['js-watch']);
-	gulp.watch("css/**/*.?(css|map)", ['css-watch']);
+	gulp.watch("css/**/*", ['css-watch']);
 	gulp.watch("images/**/*.?(png|jpg|gif)", ['images-watch']);
 	gulp.watch("fonts/**/*", ['fonts-watch']);
 	gulp.watch("font/**/*", ['font-watch']);
+	gulp.watch("font-awesome/**/*", ['font-awesome']);
 	gulp.watch("icon/**/*", ['icon-watch']);
 	gulp.watch("ui/**/*", ['ui-watch']);
 	gulp.watch("html/**/*.?(html|htm)", ['html-watch']);

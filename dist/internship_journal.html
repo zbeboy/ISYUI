@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="css/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+	
+	<!-- sticky-footer CSS -->
+	<link href="css/sticky-footer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">ISY v1.0</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>Read All Messages</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-messages -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> 资料修改</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> 设置</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> 退出</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+					<div class="custom-search-form sidebar-search" id="form"></div>
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a href="dashboard.html"><i class="fa fa-dashboard fa-fw"></i> 仪表盘</a>
+                        </li>
+						<!-- 实习模块 -->
+                        <li class="active">
+                            <a href="#"><i class="fa fa-coffee fa-fw"></i> 实习<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+								<li>
+                                    <a href="internship_release.html">实习发布</a>
+                                </li>
+								<li>
+                                    <a href="internship_teacher_distribution.html">实习教师分配</a>
+                                </li>
+                                <li>
+                                    <a href="internship_apply.html">实习申请</a>
+                                </li>
+                                <li>
+                                    <a href="internship_review.html">实习审核</a>
+                                </li>
+								<li>
+                                    <a href="internship_statistical.html">实习统计</a>
+                                </li>
+								<li>
+                                    <a href="internship_journal.html" class="active">实习日志</a>
+                                </li>
+								<li>
+                                    <a href="internship_regulate.html">实习监管</a>
+                                </li>
+                            </ul>
+                        </li>
+						<!-- end -->
+						<!-- 数据管理 -->
+						<li>
+                            <a href="#"><i class="fa fa-hdd-o fa-fw"></i> 数据<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">学校数据</a>
+                                </li>
+                                <li>
+                                    <a href="#">院数据</a>
+                                </li>
+								<li>
+                                    <a href="#">系数据</a>
+                                </li>
+								<li>
+                                    <a href="#">专业数据</a>
+                                </li>
+								<li>
+                                    <a href="#">班级数据</a>
+                                </li>
+                            </ul>
+                        </li>
+						<!-- end -->
+						<!-- 平台管理 -->
+						<li>
+                            <a href="#"><i class="fa fa-list fa-fw"></i> 平台<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">平台用户</a>
+                                </li>
+                                <li>
+                                    <a href="#">平台角色</a>
+                                </li>
+								<li>
+                                    <a href="#">平台权限</a>
+                                </li>
+                            </ul>
+                        </li>
+						<!-- end -->
+						<!-- 系统管理 -->
+						<li>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> 系统<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+								<li>
+                                    <a href="#">系统应用</a>
+                                </li>
+                                <li>
+                                    <a href="#">系统日志</a>
+                                </li>
+                                <li>
+                                    <a href="#">系统短信</a>
+                                </li>
+								<li>
+                                    <a href="#">系统邮件</a>
+                                </li>
+                            </ul>
+                        </li>
+						<!-- end -->
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+		
+		<div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">实习日志</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+					<!-- Nav tabs -->
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#home" data-toggle="tab">实习列表</a>
+                        </li>
+                        <li><a href="#profile" data-toggle="tab">批阅评语</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="home">
+							<div style="margin:20px;">
+								<div class="input-group col-md-4 col-md-offset-8" >
+									<input type="text" class="form-control" placeholder="实习标题...">
+									<span class="input-group-btn">
+										<button class="btn btn-default" type="button"><i class="fa fa-search fa-fw"></i></button>
+									</span>
+								</div><!-- /input-group -->
+							</div>
+                            <div class="panel panel-default">
+								<div class="panel-heading">
+									Default Panel
+								</div>
+								<div class="panel-body">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+								</div>
+								<div class="panel-footer">
+									<a href="#">日志列表</a>  
+									<a href="#">写日志</a>  
+								</div>
+							</div>
+									
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									Default Panel
+								</div>
+								<div class="panel-body">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+								</div>
+								<div class="panel-footer">
+									Panel Footer
+								</div>
+							</div>
+									
+							<nav class="text-center">
+								<ul class="pagination">
+									<li>
+										<a href="#" aria-label="Previous">
+											<span aria-hidden="true">&laquo;</span>
+										</a>
+									</li>
+									<li><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li>
+										<a href="#" aria-label="Next">
+											<span aria-hidden="true">&raquo;</span>
+										</a>
+									</li>
+								</ul>
+							</nav>
+                        </div>
+                        <div class="tab-pane fade" id="profile">
+                            <h4>Profile Tab</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+			<footer class="footer">
+				<p class="text-muted">&copy; Company 2016</p>
+			</footer>
+			<!-- /.footer -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="js/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/sb-admin-2.js"></script>
+
+	
+	<script type="text/javascript">
+(function($) {
+$.expr[":"].Contains = function(a, i, m) {
+	return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase()) >= 0;
+};
+function filterList(header, list) {
+	//@header 头部元素
+	//@list 无需列表
+	//创建一个搜素表单
+	var form = $("<form>").attr({
+		"class":"filterform",
+		action:"#"
+	}), input = $("<input>").attr({
+		"class":"filterinput form-control",
+		type:"text",
+		placeholder:"Search..."
+	});
+	$(form).append(input).appendTo(header);
+	$(input).change(function() {
+		var filter = $(this).val();
+		if (filter) {
+			$matches = $(list).find("a:Contains(" + filter + ")").parent();
+			$("li", list).not($matches).slideUp();
+			$matches.slideDown();
+		} else {
+			$(list).find("li").slideDown();
+		}
+		return false;
+	}).keyup(function() {
+		$(this).change();
+	});
+}
+$(function() {
+	filterList($("#form"), $("#side-menu"));
+});
+})(jQuery);	
+</script>
+
+</body>
+
+</html>
