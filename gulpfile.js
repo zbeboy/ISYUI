@@ -198,7 +198,7 @@ gulp.task('html-watch',['html'],browserSync.reload);
 gulp.task('serve', ['js','css','images','fonts','font','font-awesome','icon','html','ui'], function () {
 
     // 从这个项目的根目录启动服务器
-    yargs.p = yargs.p || 8080;
+    yargs.p = yargs.p || 9090;
     browserSync.init({
         server: {
             baseDir: "./dist"
